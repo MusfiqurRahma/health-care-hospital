@@ -1,0 +1,6 @@
+const services =[
+    {
+        name:'Eye care',
+        img:'https://www.devsnews.com/wp/medidove/wp-content/uploads/2019/05/service-1.jpg'
+    }
+]

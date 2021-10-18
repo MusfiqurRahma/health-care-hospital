@@ -1,6 +1,14 @@
 .banner{
-    background-image: url(../../../images/banner/Background.png);
+    background-image: url(../../../images/banner/1920-800-3.jpg);
     height: 100vh;
-    width: 100%;
+    width: 99%;
     background-size: cover;
+}
+.banner-text{
+    margin-left: 40%;
+}
+.btn-regular{
+    background-color: #e12454;
+    border: 1px solid #e12454;
+    font-weight: 500;
 }

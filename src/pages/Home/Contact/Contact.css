@@ -1,0 +1,9 @@
+.contact-item{
+    background-image: url(../../../images/banner/world-map-4.png);
+    background-color: #427cc5;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 60%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
