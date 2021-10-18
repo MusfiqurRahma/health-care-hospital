@@ -23,10 +23,10 @@ const Footer = () => {
             <Row className='text-white'>
                 <Col>
                     <h4>Get In Touch</h4> <hr />
-                    <h6 className='text-secondary'><i class="fas fa-phone-alt"></i> MON TO FRI(08AM-05PM)</h6> 
+                    <h6 className='text-secondary'><i class="fas fa-phone-alt"></i> SUN TO THU(08:00 AM-05:00 PM)</h6> 
                     <h4>Official: +8801700000000</h4> <br />
                     <h6 className='text-secondary'><i class="fas fa-envelope-square"></i> DO YOU HAVE A QUESTIONS?</h6>
-                    <h4> support@gmail.com</h4>
+                    <h4> support@gmail.com</h4> <br />
                     <p>Wari,Dhaka-1100 <br /> Bangladesh</p>
                     <h6 className='text-secondary'><i class="fas fa-envelope-square"></i> SOCIAL NETWORK</h6>
                     <div className='social-icon'>

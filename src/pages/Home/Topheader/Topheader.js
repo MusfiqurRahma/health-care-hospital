@@ -12,11 +12,11 @@ const Topheader = () => {
                     <Navbar.Toggle />
                     <Navbar.Collapse className="justify-content-center">
                         <Nav className='text-primary'>
-                            <Nav.Link className='text-black fw-bold' as={Link} to="/home#home">Home</Nav.Link>
-                            <Nav.Link className='text-black fw-bold' as={Link} to="/home#services">Service</Nav.Link>
-                            <Nav.Link className='text-black fw-bold' as={Link} to="/home#about">About</Nav.Link>
-                            <Nav.Link className='text-black fw-bold' as={Link} to="/home#doctors">Doctors</Nav.Link>
-                            <Nav.Link className='text-black fw-bold' as={Link} to="/home#contact">Contact</Nav.Link>
+                            <Nav.Link className='text-black fw-bold' as={Link} to="/home">Home</Nav.Link>
+                            <Nav.Link className='text-black fw-bold' as={Link} to="/services">Service</Nav.Link>
+                            <Nav.Link className='text-black fw-bold' as={Link} to="/about">About</Nav.Link>
+                            <Nav.Link className='text-black fw-bold' as={Link} to="/doctors">Doctors</Nav.Link>
+                            <Nav.Link className='text-black fw-bold' as={Link} to="/contact">Contact</Nav.Link>
                             </Nav>                           
                             </Navbar.Collapse>
                             <Nav.Link className='text-black    fw-bold' as={Link} to="/login">Login</Nav.Link>

@@ -3,12 +3,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './pages/Home/Home/Home';
 import { BrowserRouter,Switch,Route} from 'react-router-dom';
 import NotFound from './pages/NotFound/NotFound';
-import Service from './pages/Home/Service/Service';
 import About from './pages/Home/About/About';
-import Doctor from './pages/Home/Doctor/Doctor';
 import Contact from './pages/Home/Contact/Contact';
 import Topheader from './pages/Home/Topheader/Topheader';
 import Footer from './pages/Home/Footer/Footer';
+import Services from './pages/Home/Services/Services';
+import Doctors from './pages/Home/Doctors/Doctors';
+import ServiceDetails from './ServiceDetails/ServiceDetails';
 
 function App() {
   return (
@@ -22,17 +23,20 @@ function App() {
           <Route exact path='/home'>
             <Home></Home>
           </Route>
-          <Route exact path='/service'>
-            <Service></Service>
+          <Route exact path='/services'>
+            <Services></Services>
           </Route>
           <Route exact path='/about'>
             <About></About>
           </Route>
           <Route exact path='/doctors'>
-            <Doctor></Doctor>
+            <Doctors></Doctors>
           </Route>
           <Route exact path='/contact'>
             <Contact></Contact>
+          </Route>
+          <Route exact path='/servicedetails/:serviceId'>
+            <ServiceDetails></ServiceDetails>
           </Route>
           <Route exact path='*'>
             <NotFound></NotFound>
