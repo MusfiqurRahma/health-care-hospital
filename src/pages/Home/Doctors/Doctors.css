@@ -1,0 +1,9 @@
+.doctors-item{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 10px;
+}
+.team-title h1,h5{
+    color: #223645;
+    font-weight: 800;
+}
