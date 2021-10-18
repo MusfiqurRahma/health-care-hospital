@@ -1,0 +1,26 @@
+.service-img img{
+    width: 80%;
+    height: 80%;
+    border-radius: 15px;
+}
+.service-container{
+    padding: 40px;
+}
+.service-container:hover{
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.8);
+    transition: 0.3s;
+    cursor: pointer;
+}
+.service-container img{
+    width: 100%;
+    transition: all.3s ease-in-out;
+}
+.service-container img:hover{
+    transform: scale(1.1);
+}
+.detail-btn{
+    background-color: #e12454;
+    border: 1px solid #e12454;
+    padding: 8px 14px;
+    color: white;
+}
