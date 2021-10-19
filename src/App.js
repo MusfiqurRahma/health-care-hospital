@@ -13,6 +13,7 @@ import ServiceDetails from './ServiceDetails/ServiceDetails';
 import Login from './Firebase/Login/Login';
 import Register from './Register/Register';
 import AuthProvider from './context/AuthProvider';
+import PrivateRoute from './pages/PrivateRoute/PrivateRoute';
 
 function App() {
   return (
@@ -45,9 +46,9 @@ function App() {
           <Route exact path='/register'>
             <Register></Register>
           </Route>
-          <Route exact path='/servicedetails/:serviceId'>
+          <PrivateRoute exact path='/servicedetails/:serviceId'>
             <ServiceDetails></ServiceDetails>
-          </Route>
+          </PrivateRoute>
           <Route exact path='*'>
             <NotFound></NotFound>
           </Route>

@@ -1,0 +1,22 @@
+.details-container{
+    border: 1px solid rgb(214, 146, 146);
+    width: 400px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    padding: 20px;
+}
+.details-container img{
+    width: 300px;
+    border-radius: 50%;
+}
+.detail-name{
+    color: #062a4d;
+    font-weight: 800;
+}
+.booking-btn{
+    background-color: #e12454;
+    border: 1px solid #e12454;
+    margin-top: 5px;
+    color: white;
+}
