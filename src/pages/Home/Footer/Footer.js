@@ -41,7 +41,7 @@ const Footer = () => {
                     <h4>Quick Links</h4> <hr />
                     <div>
                     <a style={{color:'white'}} href="/home">Home</a><br/> <br />
-                    <a style={{color:'white'}} href="/service">Service</a><br/> <br />
+                    <a style={{color:'white'}} href="/services">Service</a><br/> <br />
                     <a style={{color:'white'}} href="/about">About</a><br/><br />
                     <a style={{color:'white'}} href="/doctors">Doctors</a><br/> <br />
                     <a style={{color:'white'}} href="/contact">Contact</a><br/><br />

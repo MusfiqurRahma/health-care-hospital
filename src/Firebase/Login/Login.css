@@ -1,0 +1,27 @@
+.login-box{
+    width: 22rem;
+    height: auto;
+    border-radius: 2px;
+    box-shadow: 0 0 6px 0 rgba(0,115,230,0,3);
+}
+/* .form-container{
+    border: 1px solid black;
+    height: 450px;
+    width: 350px;
+    margin-top: 20px;
+} */
+.login-img{
+    width: 5.5rem;
+    height: 5.5rem;
+    border-radius: 50%;
+    border:1px solid green;
+}
+.form{
+    margin-left: 30%;
+}
+.btn-block{
+    padding: 8px 30px;
+}
+.btn-google{
+    padding: 6px 50px;
+}

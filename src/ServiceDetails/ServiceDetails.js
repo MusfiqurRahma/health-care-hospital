@@ -1,20 +1,24 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState,  } from 'react';
 import { useParams } from 'react-router';
 
-const ServiceDetails = ( { name, desc, img }) => {
+const ServiceDetails = () => {
     const { serviceId } = useParams();
-    const [details, setDetails] = useState([]);
+    const [details, setDetails] = useState({});
     useEffect(() => {
-        fetch('./services.json')
+        fetch('/services.json')
             .then(res => res.json())
-            .then(data=>console.log(data))
-    },[])
+            .then(data => {
+                const matchedService = data.find(singleData => singleData.id == serviceId);
+                setDetails(matchedService)
+                console.log(matchedService);
+            })
+    },[serviceId])
     return (
         <div>
-            <h2>Details: {serviceId}</h2>
-            <p>{name}</p>
-            <p>{desc}</p>
-            <img src={img} alt="" />
+            <h2>Service: {serviceId}</h2>
+            <p>{details?.name}</p>
+            <p>{details?.desc}</p>
+            <img src={details?.img} alt="" />
         </div>
     );
 };

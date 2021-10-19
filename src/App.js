@@ -10,10 +10,14 @@ import Footer from './pages/Home/Footer/Footer';
 import Services from './pages/Home/Services/Services';
 import Doctors from './pages/Home/Doctors/Doctors';
 import ServiceDetails from './ServiceDetails/ServiceDetails';
+import Login from './Firebase/Login/Login';
+import Register from './Register/Register';
+import AuthProvider from './context/AuthProvider';
 
 function App() {
   return (
     <div className="App">
+      <AuthProvider>
       <BrowserRouter>
         <Topheader></Topheader>
         <Switch>
@@ -35,6 +39,12 @@ function App() {
           <Route exact path='/contact'>
             <Contact></Contact>
           </Route>
+          <Route exact path='/login'>
+            <Login></Login>
+          </Route>
+          <Route exact path='/register'>
+            <Register></Register>
+          </Route>
           <Route exact path='/servicedetails/:serviceId'>
             <ServiceDetails></ServiceDetails>
           </Route>
@@ -44,6 +54,7 @@ function App() {
         </Switch>
         <Footer></Footer>
       </BrowserRouter>
+     </AuthProvider>
     </div>
   );
 }
