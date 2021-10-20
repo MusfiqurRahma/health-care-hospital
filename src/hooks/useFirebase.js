@@ -12,7 +12,6 @@ const useFirebase = () => {
     const [password, setPassword] = useState('');
 
     const auth = getAuth();
-    console.log(user);
     
 
     const signInUsingGoogle = () => {

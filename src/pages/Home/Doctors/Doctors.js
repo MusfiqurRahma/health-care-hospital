@@ -12,7 +12,8 @@ const Doctors = () => {
     },[])
 
     return (
-      <>  <div className='team-title'>
+        <div className='container-fluid'>
+            <div className='team-title'>
             <h5>---- Our Team ----</h5>
             <h1>A Professional & <br /> Care Provider</h1>
             <img src="https://www.devsnews.com/wp/medidove/wp-content/themes/medidove/img/shape/section-title-line.png" alt="" />
@@ -21,7 +22,8 @@ const Doctors = () => {
                 {
                     doctors.map(doctor=><Doctor doctor={doctor} key={doctor.id}></Doctor>)
                 } 
-        </div> </>
+            </div>
+        </div>
     );
 };
 

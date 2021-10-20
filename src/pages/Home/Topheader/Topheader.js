@@ -7,7 +7,7 @@ const Topheader = () => {
     const { user, logOut} = useAuth();
     return (
         <>
-            <Navbar bg="light" variant="dark" sticky='top' collapseOnSelect expand="lg">
+            <Navbar bg="light" variant="light" sticky='top' collapseOnSelect expand="lg">
                 <Container>
                     <Navbar.Brand href="#home"><img src={headerLogo} alt="" /></Navbar.Brand>
                     <Navbar.Toggle />

@@ -3,6 +3,7 @@
     height: 100vh;
     width: 99%;
     background-size: cover;
+    background-position: center;
 }
 .banner-text{
     margin-left: 40%;
@@ -11,4 +12,10 @@
     background-color: #e12454;
     border: 1px solid #e12454;
     font-weight: 500;
+}
+
+@media only screen and (max-width) {
+    .banner{
+        background-position: right;
+    }
 }

@@ -1,6 +1,6 @@
 .consultant-container{
     background-image: url('http://wwsthemes.com/themes/medwise/v2.0/images/1920-750-1.jpg');
-    height: 70vh;
+    height: 80vh;
     width: 100%;
     background-size: cover;
     background-position: center;
@@ -10,4 +10,14 @@
     margin-right: 80px;
     color: #223645;
     font-weight: 700;
+}
+
+@media only screen and (max-width:688px) {
+    .consultant-container{
+        background-image: url('http://wwsthemes.com/themes/medwise/v2.0/images/1920-750-1.jpg');
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        background-position:center bottom;
+    }
 }

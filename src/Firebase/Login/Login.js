@@ -37,6 +37,7 @@ const handlePasswordChange= e =>{
               <div className='login-box'>
               <img className='login-img' src={logInform} alt="" /> 
               </div>
+              <h2 style={{color:'#062a4d',fontWeight:'700'}}><i class="fas fa-sign-in-alt"></i> Sign In</h2>
               <Form className='mt-3'>
 
                 <Form.Group className="mb-3">
@@ -58,7 +59,7 @@ const handlePasswordChange= e =>{
                 <Button onClick={handleGoogleLogin} className='btn-googlee' variant="success" type="submit"><i className="fab fa-google"></i>
                 Google
                 </Button>
-
+          
               </Form>
             </Col>
           </Row>

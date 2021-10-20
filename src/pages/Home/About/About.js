@@ -1,12 +1,13 @@
 import React from 'react';
-import { Col, Container, Row,Button } from 'react-bootstrap';
+import { Col, Container, Row, Button } from 'react-bootstrap';
+import './About.css'
 
 const About = () => {
     return (
         <Container className='mt-5'>
-            <Row>
-                <Col>
-                <iframe width="560" height="450" src="https://www.youtube.com/embed/H1x-ATxvNe4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <Row className='about-container'>
+                <Col className='about-vdo container-fluid'>
+                <iframe className='iframe-vdo' src="https://www.youtube.com/embed/H1x-ATxvNe4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </Col>
                 <Col>
                     <h2 style={{fontWeight:'800',color:'#000a54'}}>About Our Hospital</h2>

@@ -6,13 +6,13 @@ const Footer = () => {
     return (
         <div style={{backgroundColor:'#062a4d',marginTop:'30px',padding:'40px'}}>
             <Row>
-            <Col xs={6} md={4}>
+            <Col xs={12} md={4} lg={4}>
             <img src="https://www.devsnews.com/wp/medidove/wp-content/uploads/2019/06/logo-2.png" alt="" />
             </Col>
-            <Col xs={6} md={4}>
+            <Col xs={12} md={4} lg={4}>
                <h4 className='text-light'>Subscribe to <br /> Our Newsletter</h4>
             </Col>
-            <Col xs={6} md={4}>
+            <Col xs={12} md={4} lg={4}>
             <div className="input-group mb-3">
           <input type="text" class="form-control" placeholder="Your Email Address" aria-label="Recipient's username" aria-describedby="button-addon2"/>
           <button style={{backgroundColor:'#e12454',color:'white',fontWeight:'500'}} className="btn btn-outline-secondary" type="button" id="button-addon">Subscribe</button>
@@ -37,7 +37,7 @@ const Footer = () => {
                         <i className="fab fa-whatsapp whatsapp"></i>
                     </div>
                 </Col>
-                <Col xs={5}>
+                <Col xs={12} md={4} lg={4}>
                     <h4>Quick Links</h4> <hr />
                     <div>
                     <a style={{color:'white'}} href="/home">Home</a><br/> <br />

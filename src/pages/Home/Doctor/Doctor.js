@@ -5,9 +5,9 @@ import './Doctor.css';
 const Doctor = (props) => {
     const { img,name,title} = props.doctor;
     return (
-        <div className='doctor-item mt-5'>
+        <div className='doctor-item container-fluid mt-5'>
             <div  className='doctor-img'>
-            <img src={img} alt="" />
+            <img className='img-fluid' src={img} alt="" />
             </div>
             <Container className='doctor-container'>
                 <Card>                   
