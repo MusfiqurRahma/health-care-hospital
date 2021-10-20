@@ -1,4 +1,4 @@
-import { getAuth, signInWithPopup, GoogleAuthProvider,onAuthStateChanged, signInWithEmailAndPassword,signOut} from "firebase/auth";
+import { getAuth, signInWithPopup, GoogleAuthProvider,onAuthStateChanged,signOut,signInWithEmailAndPassword,createUserWithEmailAndPassword} from "firebase/auth";
 import { useEffect, useState } from "react";
 import initializeAuthentication from "../Firebase/Firebase.init";
 
@@ -12,6 +12,7 @@ const useFirebase = () => {
     const [password, setPassword] = useState('');
 
     const auth = getAuth();
+    console.log(user);
     
 
     const signInUsingGoogle = () => {
@@ -20,18 +21,28 @@ const useFirebase = () => {
        return signInWithPopup(auth, googleProvider)
             
     }
-    const processLogin = (email, password) => {
-        signInWithEmailAndPassword(auth, email, password)
-          .then(result => {
-            const user = result.user;
-            console.log(user);
-            setError('');
-          })
-          .catch(error => {
-            setError(error.message);
-          })
+    const handleRegistration = ()=> {
+        createUserWithEmailAndPassword (auth,email,password)
+      .then(result=>{
+        setUser(result.user)
+       window.location.reload();
+        
+      })
+      .catch(error=>{
+        setError(error.message);
+      })
       }
     
+      const handleSignIn = ()=>{
+        signInWithEmailAndPassword(auth, email, password)
+        .then(result=> {
+            setUser(result.user)
+            
+        })
+        .catch((error) =>{
+          setError(error.message);
+        })
+      }
     const logOut = () => {
         signOut(auth)
             .then(() => { })
@@ -46,13 +57,16 @@ const useFirebase = () => {
             }
        });
        return () => unsubscribed;
-    },[])
+    },[auth])
     return {
         user,
         signInUsingGoogle,
         logOut,
-        processLogin,
-        error
+        error,
+        handleRegistration,
+        setEmail,
+        setPassword,
+        handleSignIn
     }
 }
 export default useFirebase;

@@ -17,7 +17,7 @@ const Services = () => {
             <h1 style={{ color: '#223645', fontWeight: '900',fontSize:'50px'}}>Managed Your HealthCare Services</h1>
             <img src="https://www.devsnews.com/wp/medidove/wp-content/themes/medidove/img/shape/section-title-line.png" alt="" />
         </div>
-        <div className='services-container'>
+        <div className='services-container' xs={12} md={8}>
         {
                     services.map(service => <Service service={service}
                     key={service.id}

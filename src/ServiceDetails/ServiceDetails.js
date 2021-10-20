@@ -9,7 +9,7 @@ const ServiceDetails = () => {
         fetch('/services.json')
             .then(res => res.json())
             .then(data => {
-                const matchedService = data.find(singleData => singleData.id == serviceId);
+                const matchedService =data.find(singleData => singleData.id ===parseInt(serviceId));
                 setDetails(matchedService)
                 console.log(matchedService);
             })

@@ -21,11 +21,12 @@ const Topheader = () => {
                             </Nav>                           
                             </Navbar.Collapse>
                             {
-                              user?.email? <button style={{backgroundColor:'#e12454',color:'white',marginRight:'20px'}} onClick={logOut}>Sign Out</button>:<Nav.Link className='text-black fw-bold' as={Link} to="/login">Login</Nav.Link>
-                            }
-                            <Navbar.Text className='text-black fw-bold'>
+                              user?.email? <button style={{backgroundColor:'#e12454',color:'white',marginRight:'20px'}} onClick={logOut}><i class="fas fa-sign-out-alt"></i> Sign Out</button>:<Nav.Link className='text-black fw-bold' as={Link} to="/login"><i class="fas fa-sign-in-alt"></i> Login</Nav.Link>
+                           }                    
+                           <Navbar.Text className='text-black fw-bold'>
                         Signed in as: <a className='text-black' href="#login">{user?.displayName}</a>
-                        </Navbar.Text>
+                    </Navbar.Text>
+                    <img style={{width:'40px',borderRadius:'50%',marginLeft:'10px'}} src={user?.photoURL} alt="" />
                 </Container>
             </Navbar>
         </>
