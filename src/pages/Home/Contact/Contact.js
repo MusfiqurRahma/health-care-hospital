@@ -10,7 +10,7 @@ const Contact = () => {
                     <h3>Dhaka</h3>
                     <div>------------</div>
                     <h6><i class="fas fa-map-marker-alt"></i> 4th Floor,Sheraton Building</h6>
-                    <h6><i class="fas fa-phone-alt"></i> +8801700000000</h6>
+                    <h6><i class="fas fa-phone-alt"></i> +8801700000001</h6>
                 </Col>
                 <Col xs={12} md={4} lg={4} style={{borderRight:'1px solid white',color:'white'}}>
                     <h3>Rajshahi</h3>
